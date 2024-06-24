@@ -1,5 +1,50 @@
-.divCentered {
+html, body {
+	max-width: 100%;
+	overflow-x: hidden;
+	
+	padding: 0;
+	margin: 0;
+}
+
+body {
+	font-family: "Courier New", monospace;
+	
+	background-color: rgb(20, 20, 20);
+}
+
+.mainDiv {
 	display: flex;
+	flex-direction: column;
 	justify-content: center;
 	align-items: center;
+	gap: 5vh;
+	
+	height: 100vh;
+}
+
+.horizontalSplitDiv {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+	
+	height: 80vh;
+}
+
+h1 {
+	margin: 0px;
+	
+	font-size: 5vw;
+	font-weight: normal;
+	
+	color: white;
+}
+
+h2 {
+	margin: 0px;
+	
+	font-size: 2vw;
+	font-weight: normal;
+	
+	color: white;
 }
