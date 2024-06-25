@@ -1,7 +1,7 @@
-<!doctype html>
+ <!doctype html>
 <html>
 <head>
-<link rel="stylesheet" type="text/css" href="CSS/styles.css">
+<link rel="stylesheet" type="text/css" href="css/styles.css">
 </head>
 <body>
 	
@@ -14,39 +14,38 @@
 	<div style="position: absolute; bottom: 5%; color: white; font-size: 6vh; transform: rotate(180deg);">^</div>
 </div>
 	
-<div class="horizontalSplitDiv">
-	<div style="background-color: rgb(30, 30, 30); width: 50%; height: 100%;">
-		<h2>Images</h2>
-	</div>
-	<div style="background-color: rgb(40, 40, 40); width: 50%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-		<h2>FIRST PROJECT</h2>
-		<h2>details</h2>
-	</div>
-</div>
-	
-<div class="horizontalSplitDiv" style="margin-top: 10vh;">
-	<div style="background-color: rgb(30, 30, 30); width: 50%; height: 100%;">
-		<h2>Images</h2>
-	</div>
-	<div style="background-color: rgb(40, 40, 40); width: 50%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-		<h2>SECOND PROJECT</h2>
-		<h2>details</h2>
-	</div>
-</div>
-	
-<div class="horizontalSplitDiv" style="margin-top: 10vh;">
-	<div style="background-color: rgb(30, 30, 30); width: 50%; height: 100%;">
-		<h2>Images</h2>
-	</div>
-	<div style="background-color: rgb(40, 40, 40); width: 50%; height: 100%; display: flex; flex-direction: column; justify-content: center; align-items: center;">
-		<h2>THIRD PROJECT</h2>
-		<h2>details</h2>
+<div class="sectionDiv" style="background-color: blue;">
+	<h1 class="largeHeader">PROJECTS</h1>
+	<div style="background-color: red; height: 100%; display: flex; flex-direction: row;">
+		<div style="background-color: magenta; width: 20%; height: 100%;">
+			<div class="sidebar">
+				<div class="sidebarItemHolder">
+					<label for="sidebarUnityCheckbox">Unity</label>
+					<input type="checkbox" id="sidebarUnityCheckbox">
+					<button class="sidebarButton">Unity</button>
+					
+					<ul class="sidebarDropdown">
+						<li><button class="sidebarButton">Project 1</button></li>
+						<li><button class="sidebarButton">Project 2</button></li>
+						<li><button class="sidebarButton">Project 3</button></li>
+					</ul>
+				</div>
+				<div class="sidebarItemHolder">
+					<button class="sidebarButton">Qt</button>
+				</div>
+				<div class="sidebarItemHolder">
+					<button class="sidebarButton">Blender</button>
+				</div>
+			</div>
+		</div>
+		<div style="background-color: green; width: 100%">
+			A
+		</div>
 	</div>
 </div>
 	
 <div class="mainDiv" style="height: auto;">
-	<h2 style="margin-top: 10vh; font-weight: bold;">So on and so fourth...</h2>
-	<h2>Just making it pretty basic right now, will change it up in the future :)</h2>
+	<h2 style="margin-top: 10vh;">Just making it pretty basic right now, will change it up in the future :)</h2>
 	<h2>* Want to make these boxes above more interactive and visual, not blank *</h2>
 </div>
 
