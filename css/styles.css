@@ -35,7 +35,6 @@ button, input[type="submit"], input[type="reset"] {
 .sectionDiv {
 	display: flex;
 	flex-direction: column;
-	gap: 5vh;
 	
 	height: 100vh;
 }
@@ -75,9 +74,11 @@ button, input[type="submit"], input[type="reset"] {
 
 .sidebarItemHolder {
 	background-color: rgb(20, 20, 20);
-	border-radius: 20px;
+	border-radius: 15px;
 	
-	transition : background-color 200ms ease;
+	overflow: hidden;
+	
+	transition: background-color 200ms ease;
 }
 
 .sidebarItemHolder:hover {
@@ -95,20 +96,95 @@ button, input[type="submit"], input[type="reset"] {
 	color: rgb(20, 20, 20);
 }
 
+.sidebarItemHolder:has(> .sidebarCheckbox:checked) {
+	background-color: rgb(150, 150, 150);
+}
+
+.sidebarItemHolder:has(> .sidebarCheckbox:checked) > * {
+	color: rgb(20, 20, 20);
+}
+
+.sidebarItemHolder:has(> .sidebarCheckbox:checked) > *:hover {
+	color: rgb(100, 100, 100);
+}
+
 .sidebarButton {
-	border-radius: 20px;
-	
 	height: 30px;
 	width: 100%;
+	
+	text-align: center;
+	text-decoration: none;
+	
+	font-weight: bold;
+	font-size: 20px;
+	
+	transition: background-color 200ms ease;
+	transition: color 100ms ease;
+}
+
+.sidebarButton:hover {
+	background-color: rgb(120, 120, 120);
+	color: rgb(20, 20, 20);
+}
+
+.sidebarCheckboxText {
+	width: 100%;
+	height: 30px;
+	line-height: 30px;
+	
+	border-radius: 15px;
 	
 	text-align: center;
 	
 	font-weight: bold;
 	font-size: 20px;
+	
+	cursor: pointer;
+	display: block;
+	
+	user-select: none;
 }
 
+.sidebarCheckboxText:before,
+.sidebarCheckboxText:after {
+	background-color: rgb(20, 20, 20);
+  	content: "";
+  	display: inline-block;
+  	height: 3px;
+  	position: relative;
+  	vertical-align: middle;
+  	width: 50%;
+}
+
+.sidebarCheckboxText:before {
+  	right: 0.5em;
+  	margin-left: -50%;
+}
+
+.sidebarCheckboxText:after {
+  	left: 0.5em;
+  	margin-right: -50%;
+}
+
+.sidebarCheckbox {
+	position: absolute;
+	opacity: 0;
+	height: 0px;
+}
+
+/* For smooth toggling of dropdown. Cannot transition auto height*/
 .sidebarDropdown {
-	text-decoration: none;
+	display: grid;
+	grid-template-rows: 0fr;
+	transition: grid-template-rows 250ms ease;
+}
+
+.sidebarCheckbox:checked + .sidebarDropdown {
+	grid-template-rows: 1fr;
+}
+
+.sidebarDropdown > * {
+	overflow: hidden;
 }
 
 h1 {
@@ -123,27 +199,30 @@ h1 {
 h1.largeHeader {
 	overflow: hidden;
 	text-align: center;
+	
+	margin: 0px;
+	padding: 0px;
 }
 
 h1.largeHeader:before,
 h1.largeHeader:after {
-  background-color: #FFF;
-  content: "";
-  display: inline-block;
-  height: 3px;
-  position: relative;
-  vertical-align: middle;
-  width: 50%;
+  	background-color: #FFF;
+  	content: "";
+  	display: inline-block;
+  	height: 3px;
+  	position: relative;
+  	vertical-align: middle;
+  	width: 50%;
 }
 
-h1.largeHeader::before {
-  right: 0.2em;
-  margin-left: -50%;
+h1.largeHeader:before {
+  	right: 0.2em;
+  	margin-left: -50%;
 }
 
-h1.largeHeader::after {
-  left: 0.2em;
-  margin-right: -50%;
+h1.largeHeader:after {
+  	left: 0.2em;
+  	margin-right: -50%;
 }
 
 h2 {
@@ -153,4 +232,15 @@ h2 {
 	font-weight: normal;
 	
 	color: white;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul > * {
+	overflow: hidden;
+	
+	white-space: nowrap;
 }
