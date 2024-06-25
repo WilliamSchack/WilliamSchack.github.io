@@ -57,7 +57,7 @@ button, input[type="submit"], input[type="reset"] {
 	align-items: center;
 	
 	border-radius: 20px;
-	background-color: rgb(20, 20, 20);
+	background-color: rgb(40, 40, 40);
 }
 
 .sidebar > *:first-child{
@@ -73,7 +73,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .sidebarItemHolder {
-	background-color: rgb(20, 20, 20);
+	background-color: rgb(40, 40, 40);
 	border-radius: 15px;
 	
 	overflow: hidden;
@@ -82,7 +82,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .sidebarItemHolder:hover {
-	color: rgb(20, 20, 20);
+	color: rgb(40, 40, 40);
 	background-color: rgb(150, 150, 150);
 }
 
@@ -93,7 +93,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .sidebarItemHolder > *:hover {
-	color: rgb(20, 20, 20);
+	color: rgb(40, 40, 40);
 }
 
 .sidebarItemHolder:has(> .sidebarCheckbox:checked) {
@@ -101,11 +101,7 @@ button, input[type="submit"], input[type="reset"] {
 }
 
 .sidebarItemHolder:has(> .sidebarCheckbox:checked) > * {
-	color: rgb(20, 20, 20);
-}
-
-.sidebarItemHolder:has(> .sidebarCheckbox:checked) > *:hover {
-	color: rgb(100, 100, 100);
+	color: rgb(40, 40, 40);
 }
 
 .sidebarButton {
@@ -119,12 +115,10 @@ button, input[type="submit"], input[type="reset"] {
 	font-size: 20px;
 	
 	transition: background-color 200ms ease;
-	transition: color 100ms ease;
 }
 
 .sidebarButton:hover {
 	background-color: rgb(120, 120, 120);
-	color: rgb(20, 20, 20);
 }
 
 .sidebarCheckboxText {
@@ -147,7 +141,7 @@ button, input[type="submit"], input[type="reset"] {
 
 .sidebarCheckboxText:before,
 .sidebarCheckboxText:after {
-	background-color: rgb(20, 20, 20);
+	background-color: rgb(40, 40, 40);
   	content: "";
   	display: inline-block;
   	height: 3px;
@@ -232,6 +226,11 @@ h2 {
 	font-weight: normal;
 	
 	color: white;
+}
+
+h3 {
+	margin: 0px;
+	font-size: 1.1vw;
 }
 
 ul {
