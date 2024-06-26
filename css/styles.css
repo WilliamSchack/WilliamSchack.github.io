@@ -26,46 +26,147 @@ button, input[type="submit"], input[type="reset"] {
 	outline: inherit;
 }
 
-.mainDiv {
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
-	gap: 5vh;
+h1 {
+	margin: 0px;
 	
+	font-size: 4rem;
+	font-weight: normal;
+	
+	color: white;
+}
+
+h1.largeHeader {
+	overflow: hidden;
+	text-align: center;
+	
+	margin: 0px;
+	padding: 0px;
+}
+
+h1.largeHeader:before,
+h1.largeHeader:after {
+  	background-color: #FFF;
+  	content: "";
+  	display: inline-block;
+  	height: 3px;
+  	position: relative;
+  	vertical-align: middle;
+  	width: 50%;
+}
+
+h1.largeHeader:before {
+  	right: 0.2em;
+  	margin-left: -50%;
+}
+
+h1.largeHeader:after {
+  	left: 0.2em;
+  	margin-right: -50%;
+}
+
+h2 {
+	margin: 0px;
+	
+	font-size: 2rem;
+	font-weight: normal;
+	
+	color: white;
+}
+
+h3 {
+	margin: 0px;
+	font-size: 1rem;
+}
+
+ul {
+	margin: 0px;
+	padding: 0px;
+}
+
+ul > * {
+	overflow: hidden;
+	
+	white-space: nowrap;
+}
+
+hr {
+	height: 3px;
+	margin-bottom: 13px;
+	
+	border-width:0;
+	
+	color: rgb(40, 40, 40);
+	background-color: rgb(40, 40, 40);
+}
+
+.absolute {
+	position: absolute;
+}
+
+.bold {
+	font-weight: bold;
+}
+
+.quaterWidth {
+	width: 25%;
+}
+
+.fullWidth {
+	width: 100%;
+}
+
+.screenWidth {
+	width: 100vw;
+}
+
+.fullHeight {
+	height: 100%;
+}
+
+.screenHeight {
 	height: 100vh;
 }
 
-.sectionDiv {
-	display: flex;
-	flex-direction: column;
-	
-	height: 100vh;
+.rotate180 {
+	transform: rotate(180deg);
 }
 
-.horizontalSplitDiv {
+div.flexColumn {
+	display: flex;
+	flex-direction: column;
+}
+
+div.flexRow {
 	display: flex;
 	flex-direction: row;
+}
+
+div.centerItems {
 	justify-content: center;
 	align-items: center;
+}
+
+.gap5 {
+	gap: 5vh;
+}
+
+.darkBackground {
+	border-radius: 20px;
+	box-shadow: inset 0 0 10px rgb(20, 20, 20);
 	
-	height: 80vh;
+	background-color: rgb(40, 40, 40);
 }
 
 .sidebar {
 	height: calc(100% - 20px);
-	margin: 10px;
+	margin-left: 10px;
+	margin-right: 10px;
 	
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	
 	overflow-y: auto;
-	
-	border-radius: 20px;
-	box-shadow: inset 0 0 10px rgb(20, 20, 20);
-	
-	background-color: rgb(40, 40, 40);
 }
 
 .sidebar > *:first-child{
@@ -206,77 +307,4 @@ button, input[type="submit"], input[type="reset"] {
 
 .sidebarDropdown > * {
 	overflow: hidden;
-}
-
-h1 {
-	margin: 0px;
-	
-	font-size: 4rem;
-	font-weight: normal;
-	
-	color: white;
-}
-
-h1.largeHeader {
-	overflow: hidden;
-	text-align: center;
-	
-	margin: 0px;
-	padding: 0px;
-}
-
-h1.largeHeader:before,
-h1.largeHeader:after {
-  	background-color: #FFF;
-  	content: "";
-  	display: inline-block;
-  	height: 3px;
-  	position: relative;
-  	vertical-align: middle;
-  	width: 50%;
-}
-
-h1.largeHeader:before {
-  	right: 0.2em;
-  	margin-left: -50%;
-}
-
-h1.largeHeader:after {
-  	left: 0.2em;
-  	margin-right: -50%;
-}
-
-h2 {
-	margin: 0px;
-	
-	font-size: 2rem;
-	font-weight: normal;
-	
-	color: white;
-}
-
-h3 {
-	margin: 0px;
-	font-size: 1rem;
-}
-
-ul {
-	margin: 0px;
-	padding: 0px;
-}
-
-ul > * {
-	overflow: hidden;
-	
-	white-space: nowrap;
-}
-
-hr {
-	height: 3px;
-	margin-bottom: 13px;
-	
-	border-width:0;
-	
-	color: rgb(40, 40, 40);
-	background-color: rgb(40, 40, 40);
 }

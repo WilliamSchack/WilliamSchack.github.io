@@ -5,24 +5,24 @@
 </head>
 <body>
 	
-<div class="mainDiv">
+<div class="flexColumn centerItems gap5 screenHeight">
 	<h1>Hi, I'm William :)</h1>
 	<h2>I love anything application development</h2>
 	
-	<h2 style="position: absolute; bottom: 15%; font-weight: bold;">🚧 Still under construction 🚧</h2>
+	<h2 class="absolute bold" style="bottom: 15%;">🚧 Still under construction 🚧</h2>
 	
-	<div style="position: absolute; bottom: 5%; color: white; font-size: 6vh; transform: rotate(180deg);">^</div>
+	<div class="absolute rotate180" style="bottom: 5%; color: white; font-size: 6vh;">^</div>
 </div>
 	
-<div class="sectionDiv" style="background-color: blue;">
+<div class="flexColumn screenHeight" style="background-color: blue;">
 	<h1 class="largeHeader">ABOUT ME</h1>
 </div>
 	
-<div class="sectionDiv">
+<div class="flexColumn screenHeight">
 	<h1 class="largeHeader">PROJECTS</h1>
-	<div style="height: 100%; max-height: calc(100% - 4rem); display: flex; flex-direction: row;">
-		<div style="width: 25%; height: 100%;">
-			<div class="sidebar">
+	<div class="flexRow fullHeight" style="max-height: calc(100% - 4rem);">
+		<div class="quaterWidth fullHeight">
+			<div class="sidebar darkBackground">
 				<div class="sidebarItemHolder">
 					<label class="sidebarCheckboxText" for="sidebarUnityCheckbox">Unity</label>
 					<input class="sidebarCheckbox" type="checkbox" id="sidebarUnityCheckbox" checked>
@@ -74,17 +74,17 @@
 				</div>
 			</div>
 		</div>
-		<div style="background-color: green; width: 100%">
+		<div class="fullWidth darkBackground" style="margin-right: 10px; margin-bottom: 20px;">
 			A
 		</div>
 	</div>
 </div>
 	
-<div class="mainDiv" style="height: auto;">
+<div class="flexColumn centerDiv gap5">
 	<h2 style="margin-top: 10vh;">Just making it pretty basic right now, will change it up in the future :)</h2>
 </div>
 
-<div style="margin-top: 10vh; background-color: black; width: 100vw; height: 50px;"></div>
+<div class="screenWidth" style="margin-top: 10vh; background-color: black; height: 50px;"></div>
 	
 </body>
 </html>
