@@ -1,5 +1,5 @@
 ///
-/// Solid State by HTML5 UP
+/// Phantom by HTML5 UP
 /// html5up.net | @ajlkn
 /// Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
 ///
@@ -8,6 +8,7 @@
 
 	form {
 		margin: 0 0 _size(element-margin) 0;
+		overflow-x: hidden;
 
 		> :last-child {
 			margin-bottom: 0;
@@ -69,14 +70,10 @@
 	}
 
 	label {
-		color: _palette(fg-bold);
 		display: block;
-		font-family: _font(family-heading);
-		font-size: 0.8em;
-		font-weight: _font(weight-heading-bold);
-		letter-spacing: _font(kern-heading);
-		margin: 0 0 (_size(element-margin) * 0.35) 0;
-		text-transform: uppercase;
+		font-size: 0.9em;
+		font-weight: _font(weight-bold);
+		margin: 0 0 (_size(element-margin) * 0.5) 0;
 	}
 
 	input[type="text"],
@@ -86,14 +83,14 @@
 	select,
 	textarea {
 		@include vendor('appearance', 'none');
-		background: _palette(border-bg);
-		border-radius: _size(border-radius);
+		background-color: transparent;
 		border: none;
-		border: solid 2px _palette(border);
+		border-radius: 0;
+		border-bottom: solid _size(border-width) _palette(border);
 		color: inherit;
 		display: block;
 		outline: 0;
-		padding: 0 1em;
+		padding: 0;
 		text-decoration: none;
 		width: 100%;
 
@@ -102,7 +99,8 @@
 		}
 
 		&:focus {
-			border-color: desaturate(lighten(_palette(accent), 6), 3);
+			border-bottom-color: _palette(accent1);
+			box-shadow: inset 0 -1px 0 0 _palette(accent1);
 		}
 	}
 
@@ -139,7 +137,8 @@
 	}
 
 	textarea {
-		padding: 0.75em 1em;
+		padding: 0;
+		min-height: (_size(element-height) * 1.25);
 	}
 
 	input[type="checkbox"],
@@ -158,18 +157,14 @@
 			cursor: pointer;
 			display: inline-block;
 			font-size: 1em;
-			font-family: _font(family);
-			text-transform: none;
-			letter-spacing: 0;
 			font-weight: _font(weight);
 			padding-left: (_size(element-height) * 0.6) + 0.75em;
 			padding-right: 0.75em;
 			position: relative;
 
 			&:before {
-				background: _palette(border-bg);
 				border-radius: _size(border-radius);
-				border: solid 2px _palette(border);
+				border: solid _size(border-width) _palette(border);
 				content: '';
 				display: inline-block;
 				font-size: 0.8em;
@@ -185,16 +180,17 @@
 
 		&:checked + label {
 			&:before {
-				background: _palette(fg-bold);
-				border-color: _palette(fg-bold);
-				content: '\f00c';
+				background: _palette(fg);
+				border-color: _palette(fg);
 				color: _palette(bg);
+				content: '\f00c';
 			}
 		}
 
 		&:focus + label {
 			&:before {
-				border-color: _palette(accent);
+				border-color: _palette(accent1);
+				box-shadow: 0 0 0 _size(border-width) _palette(accent1);
 			}
 		}
 	}
@@ -213,24 +209,4 @@
 				border-radius: 100%;
 			}
 		}
-	}
-
-	::-webkit-input-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	:-moz-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	::-moz-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
-	}
-
-	:-ms-input-placeholder {
-		color: _palette(fg-light) !important;
-		opacity: 1.0;
 	}
