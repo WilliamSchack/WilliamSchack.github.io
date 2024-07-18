@@ -4700,3 +4700,27 @@ input, select, textarea {
 		}
 
 	}
+
+/* Skill Bar */
+
+	div.skillContainer {
+		height: 1.5rem;
+		border-radius: 2rem;
+		flex: 1;
+	}
+
+	div.skillContainer > * {
+		border-radius: 2rem;
+		background-color: rgb(190, 190, 190);
+	}
+	
+	div.skillBar {
+		background-color: rgb(110, 190, 90);
+		height: 1.5rem;
+		padding-right: 0.7rem;
+		color: white;
+		text-align: right;
+		line-height: 1.5rem;
+		font-size: 1rem;
+		border-radius: 2rem;
+	}
