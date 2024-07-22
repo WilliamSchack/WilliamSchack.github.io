@@ -1,4 +1,5 @@
 @import url(fontawesome-all.min.css);
+@import url(custom-icons.css);
 @import url("https://fonts.googleapis.com/css?family=Merriweather:300,700,300italic,700italic|Source+Sans+Pro:900");
 
 /*
@@ -3494,7 +3495,7 @@ input, select, textarea {
 		@media screen and (max-width: 480px) {
 			
 			#intro {
-				min-height: 60vh;
+				min-height: 70vh;
 			}
 			
 			#intro .actions {
@@ -4723,4 +4724,14 @@ input, select, textarea {
 		line-height: 1.5rem;
 		font-size: 1rem;
 		border-radius: 2rem;
+	}
+
+/* Icons */
+
+	.qt::before {
+		content: url("../icons/qt.svg");
+	}
+	
+	.blender::before {
+		content: url("../icons/blender.svg");
 	}
