@@ -11,6 +11,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
 		<link rel="stylesheet" href="assets/css/main.css" />
 		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+		<?php include "assets/php/contact.php"; ?>
 	</head>
 	<body class="is-preload">
 
@@ -24,7 +25,7 @@
 						<p><b>-- Site still under construction --</b></p>
 						<ul class="actions">
 							<li><a href="#header" class="button scrolly">About Me</a></li>
-							<li><a href="projects.html" class="button">Projects</a></li>
+							<li><a href="projects" class="button">Projects</a></li>
 							<li><a href="https://github.com/WilliamSchack" target="_blank" rel="noopener noreferrer" class="button">Github</a></li>
 						</ul>
 						<ul class="actions">
@@ -34,14 +35,14 @@
 
 				<!-- Header -->
 					<header id="header">
-						<a href="" class="logo">William Schack</a>
+						<a href="#header" class="logo scrolly">William Schack</a>
 					</header>
 
 				<!-- Nav -->
 					<nav id="nav">
 						<ul class="links">
-							<li class="active"><a href="index.html">About Me</a></li>
-							<li><a href="projects.html">Projects</a></li>
+							<li class="active"><a href="#header" class="scrolly">About Me</a></li>
+							<li><a href="projects">Projects</a></li>
 						</ul>
 						<ul class="icons">
 							<li><a href="https://github.com/WilliamSchack" target="_blank" rel="noopener noreferrer" class="icon brands fa-github"><span class="label">GitHub</span></a></li>
@@ -63,7 +64,7 @@
 								<p>Hi! I'm William Schack, a Unity Game Developer having worked on many projects mainly in 3D. I am currently completing year 12, planning to study Computer Science in 2025.</p>
 								<p>Currently I am working in a few different areas, not just in unity but with blender, qt, and starting web dev as well, expanding and improving my skills, learning new things that I love doing.</p>
 								<p>I am mainly a solo developer, but I have worked in a team before on multiple games for school projects. My most proficient skill is programming, being what I enjoy the most and what I have taken the most time to learn since 2019 when I started.</p>
-								<p>I mainly do programming and prototyping as my hobby, but outside of that I enjoy playing video games, taking in and studying nature, hiking, bike riding, and snowboarding on the few chances I get.</p>
+								<p>I mainly do programming and prototyping as my hobby, but outside of that I enjoy playing video games, taking in and studying nature, hiking, bike riding, and snowboarding when I get the chance.</p>
 								<!-- How I Started -->
 								<h2>How I Started</h2>
 								<p>I game development when I began high school during 2019, not having really anything to do at the time I decided to take up video game development, as I loved playing video games and learning the ins-and-outs of computers so I thought programming and making games would be perfect, and it was.</p>
@@ -72,33 +73,27 @@
 								<h2>Skills</h2>								
 								<div class="row gtr-uniform">
 									<div class="col-12">
-										<h3>Unity - 2019</h3>
+										<h3>Unity</h3>
 										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
+											<div>
+												<h4>Skill</h4>
+												<h4>Skill</h4>
+												<h4>Skill</h4>
+											</div>
+											<div class="flex-1">
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 70%;">
+														70%
 													</div>
 												</div>
-											</div>
-										</div>
-										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 50%;">
+														50%
 													</div>
 												</div>
-											</div>
-										</div>
-										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 40%;">
+														40%
 													</div>
 												</div>
 											</div>
@@ -106,79 +101,63 @@
 										<p>-</p>
 									</div>
 									<div class="col-12">
-										<header>
-											<h2>C++</h2>
-											<p>2022</p>
-										</header>
+										<h3>C++ / Qt</h3>
 										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
+											<div>
+												<h4>C++</h4>
+												<h4>Qt</h4>
+												<h4>Multithreading</h4>
+											</div>
+											<div class="flex-1">
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 75%;">
+														75%
+													</div>
+												</div>
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 70%;">
+														70%
+													</div>
+												</div>
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 60%;">
+														60%
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
-													</div>
-												</div>
-											</div>
-										</div>
-										<p>
-											Since I started development with the language I have gained a fair bit of experience and I really enjoy using it! <a href="projects/c++/spotifydownloader.html">Spotify Downloader</a> is the only project that I have created using C++ in conjunction with Qt for the GUI, so I am by no means completely fluent in the language yet, but it has taught me a lot and I can confidentally say I can create another program with it.
-										</p>
+										<p>Since I started development with the language I have gained a fair bit of experience and I really enjoy using it! <a href="projects/c++/spotifydownloader.html">Spotify Downloader</a> is the only project that I have created using C++ in conjunction with Qt for the GUI, so I am by no means completely fluent in the language yet, but it has taught me a lot and I can confidentally say I can create another program with it.</p>
+										<p></p>
 									</div>
 									<div class="col-12">
-										<h3>Blender - 2024</h3>
+										<h3>Blender</h3>
 										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
+											<div>
+												<h4>Modelling</h4>
+												<h4>Texturing</h4>
+												<h4>Animation</h4>
+											</div>
+											<div class="flex-1">
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 70%;">
+														70%
+													</div>
+												</div>
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 50%;">
+														50%
+													</div>
+												</div>
+												<div class="skillContainer">
+													<div class="skillBar" style="width: 40%;">
+														40%
 													</div>
 												</div>
 											</div>
 										</div>
-										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
-													</div>
-												</div>
-											</div>
-										</div>
-										<div class="row">
-											<h4>Skill</h4>
-											<div class="skillContainer">
-												<div>
-													<div class="skillBar" style="width: 55%;">
-														55%
-													</div>
-												</div>
-											</div>
-										</div>
-										<p>
-											I have used blender in conjunction with Unity since I began developing with it but I only seriously started learning in 2024. In the past I have created small models for video games such as weapons and props, but I have started creating environments such as <a href="projects/blender/beachterminal.html">Beach Terminal</a>, and animations such as <a href="projects/blender/diveintodreams.html">Dive Into Dreams</a>. There is still much I have to learn surrounding 3D modelling but progress is developing steadily! Currently I would say that I could create a model but it may take a while, and the topology and uv mapping may be a bit off, but the result would still work great in a video games, and I enjoy doing it.
-										</p>
+										<p>I have used blender in conjunction with Unity since I began developing with it but I only seriously started learning in 2024.</p>
+										<p>In the past I have created small models for video games such as weapons and props, but I have started creating environments such as <a href="projects/blender/beachterminal.html">Beach Terminal</a>, and animations such as <a href="projects/blender/diveintodreams.html">Dive Into Dreams</a>.</p>
+										<p>There is still much I have to learn surrounding 3D modelling but progress is developing steadily! Currently I would say that I could create anything thrown at me but it may take a while with some research, and it wont be perfect, but the result would still work great in a video games.</p>
 									</div>
 								</div>
 								<h2></h2>
@@ -188,23 +167,56 @@
 				<!-- Footer -->
 					<footer id="footer">
 						<section>
-							<form method="post" action="#">
+							<form method="post" action="www.google.com">
 								<div class="fields">
 									<div class="field">
 										<label for="name">Name</label>
-										<input type="text" name="name" id="name" />
+										<?php
+											$inputtedText = "";
+											if(isset($_POST['name'])) {
+												$inputtedText = $_POST['name'];
+											}
+											echo "<input type='text' name='name' id='name' value='$inputtedText' />";
+										?>
+									</div>
+									<div class="field">
+										<label for="last_name"></label>
+										<input type='text' name='last_name' id='last_name' value="uytfcvbnjkiuhg" tabindex='-1' />
 									</div>
 									<div class="field">
 										<label for="email">Email</label>
-										<input type="text" name="email" id="email" />
+										<?php
+											$inputtedText = "";
+											if(isset($_POST['email'])) {
+												$inputtedText = $_POST['email'];
+											}
+											echo "<input type='text' name='email' id='email' value='$inputtedText' />";
+										?>
+									</div>
+									<div class="field">
+										<label for="phone"></label>
+										<input type='text' name='phone' id='phone' tabindex='-1' />
 									</div>
 									<div class="field">
 										<label for="message">Message</label>
-										<textarea name="message" id="message" rows="3"></textarea>
+										<?php
+											$inputtedText = "";
+											if(isset($_POST['message'])) {
+												$inputtedText = $_POST['message'];
+											}
+											echo "<textarea name='message' id='message' rows='3'>$inputtedText</textarea>";
+										?>
+										
 									</div>
 								</div>
+								<?php
+									if(isset($_POST['contactError'])) {
+										$errorMessage = $_POST['contactError'];
+										echo "<h4 class='error'>$errorMessage</h4>";
+									}
+								?>
 								<ul class="actions">
-									<li><input type="submit" value="Send Message" /></li>
+									<li><input type="submit" name="contactButton" value="Send Message" formaction="#footer"/></li>
 								</ul>
 							</form>
 						</section>
