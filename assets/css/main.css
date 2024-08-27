@@ -4744,8 +4744,12 @@ input, select, textarea {
 
 /* Skill Bar */
 
+	div.skillText > * {
+		line-height: 1rem;
+	}
+
 	div.skillContainer {
-		height: 1.5rem;
+		height: 1rem;
 		border-radius: 2rem;
 		background-color: rgb(190, 190, 190);
 		margin: 0 0 1rem 0;
@@ -4753,7 +4757,7 @@ input, select, textarea {
 	
 	div.skillBar {
 		background-color: rgb(110, 190, 90);
-		height: 1.5rem;
+		height: 1rem;
 		padding-right: 0.7rem;
 		color: white;
 		text-align: right;
